@@ -1,0 +1,60 @@
+li.type-product {
+    div.popup-wrap {
+        position: absolute;
+        top: 40px;
+        bottom: 0px;
+        right: 11px;
+        height: 100%;
+        left: 0;
+        width: 300px;
+        z-index: 99;
+        display: none;
+        background-color: #f4f4f4!important;
+        border: 1px solid #333!important;
+        font-size: 16px;
+        div.popup-title {
+            background-color: red!important;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 10px!important;
+            color: #fff!important;
+        }
+        div.giasanpham {
+            padding: 10px 5px!important;
+            border-bottom: 1px solid #333!important;
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            span {
+                color: #333!important;
+                font-size: 18px;
+                line-height: 35px!important;
+                strong {
+                    position: relative;
+                    display: inline-flex;
+                }
+            }
+            span.giagiam {
+                strong {
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+            span.giasaleoff,span.giatshuong {
+                strong {
+                    color: red!important;
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+        }
+        p.motasanpham {
+            padding: 15px 5px!important;
+        }
+    }
+}
+li.type-product:hover div.popup-wrap {
+    display: block;
+}
